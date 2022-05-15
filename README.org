@@ -8,8 +8,8 @@ This is a function that receives  =CloudEvent= whose body is a JSON that has all
  - Process the image using a YOLOv3 model
  - Upload the results to a server
 
-This code uses a modification of embed Tomcat to ease the development of event driven functions.
+This code uses a modification of embed Tomcat to ease the development of event driven functions (see [[[https://github.com/jgutie2r/tomcat]])
 
 The code is not fully functional, there are two methods in ObjectDetectCloudEventListener that must be implemented:
- - `downloadResource`
- - `uploadResults`
+ - =downloadResource=
+ - =uploadResults=
