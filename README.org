@@ -1,0 +1,11 @@
+#+TITLE: Event-driven serverless function for objetc detection
+#+AUTHOR: J. Gutiérrez
+#+DATE: May 2022
+
+* Introduction
+This is a function that receives  =CloudEvent= whose body is a JSON that has all the information needed to:
+ - Download an image
+ - Process the image using a YOLOv3 model
+ - Upload the results to a server
+
+This code uses a modification of embed Tomcat to ease the development of event driven functions.
