@@ -1,4 +1,4 @@
-#+TITLE: Event-driven serverless function for objetc detection
+#+TITLE: Event-driven serverless function for object detection
 #+AUTHOR: J. Gutiérrez
 #+DATE: May 2022
 
@@ -9,3 +9,7 @@ This is a function that receives  =CloudEvent= whose body is a JSON that has all
  - Upload the results to a server
 
 This code uses a modification of embed Tomcat to ease the development of event driven functions.
+
+The code is not fully functional, there are two methods in ObjectDetectCloudEventListener that must be implemented:
+ - `downloadResource`
+ - `uploadResults`
